@@ -6,3 +6,6 @@ the strings alphabetically.
 Hint: The sorted() function's key parameter can take a lambda function that 
 returns a tuple indicating the primary and secondary sort keys.
 """
+strings_list = ["Peter", "Aaron", "Bob", "Jeff", "Jackson", "Nick"]
+sorted_list = sorted(strings_list, key=lambda x: (len(x), x))
+print("Sorted list:", sorted_list)
